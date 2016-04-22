@@ -1,0 +1,14 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "Initial examples of Vert.x 3.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vertx3-full": "~3.2.1"
+  }
+}
