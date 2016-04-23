@@ -1,0 +1,30 @@
+= README
+
+For more information on the Vert.x event bus: http://vertx.io/docs/vertx-core/js/#event_bus
+
+
+Clustering:
+https://groups.google.com/forum/#!topic/vertx/W09RnRBGb2w
+
+
+
+To start in "clustered-mode":
+
+[source, shell]
+----
+$ vertx run receiver.js --cluster --cluster-host=127.0.0.1
+----
+
+
+    --cluster                                If specified then the vert.x
+                                             instance will form a cluster with
+                                             any other vert.x instances on the
+                                             network.
+    --cluster-host <host>                    host to bind to for cluster
+                                             communication. If this is not
+                                             specified vert.x will attempt to
+                                             choose one from the available
+                                             interfaces.
+    --cluster-port <port>                    Port to use for cluster
+                                             communication. Default is 0 which
+                                             means choose a spare random port.
